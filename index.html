@@ -7,8 +7,8 @@
 	</head>
 	<body>
 		<h1>Volunteer Form</h1>
-		<div class="box">
-			<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+		<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+			<div class="box">
 				<h2>My Info</h2>
 				<label>First Name: <input type="text" name="first-NAME_FIELD"></label>
 				<label>Last Name: <input type="text" name="last_name_field"></label>
@@ -17,9 +17,29 @@
 				<p>Gender:</p>
 				<label>Male <input type="radio" name="gender_field" value="male"></label>
 				<label>Female <input type="radio" name="gender_field" value="female"></label>
-				
-				<input type="text" name="comments_field">
-			</form>
-		</div>
+				<label>Age: <select name="age_field">
+					<option>under 18</option>
+					<option>18 - 24</option>
+					<option>25 - 34</option>
+					<option>35 - 44</option>
+					<option>45 - 54</option>
+					<option>55 - 64</option>
+					<option>65 and over</option>
+				</select>
+			</div>
+			<h2>My Availability</h2>
+			<div class="box">
+				<p>Days Available:</p>
+					<label><input type="checkbox" name="available_field[]" value="Sunday">Sunday</label>
+					<label><input type="checkbox" name="available_field[]" value="Monday">Monday</label>
+					<label><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</label>
+					<label><input type="checkbox" name="available_field[]" value="Wednesday">Wednesday</label>
+					<label><input type="checkbox" name="available_field[]" value="Thursday">Thursday</label>
+					<label><input type="checkbox" name="available_field[]" value="Friday">Friday</label>
+					<label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label>
+				<p>Any Comments?</p>
+				<textarea type="text" name="comments_field" rows="3"></textarea>
+			</div>
+		</form>
 	</body>
 </html>
